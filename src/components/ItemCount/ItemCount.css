@@ -1,0 +1,17 @@
+.counter__box{
+    width: 9vw;
+}
+.counter__box__counter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+.counter__box__button{
+    color: white;
+    border-radius: 1vw;
+    height: 2vw;
+    width: 2vw;
+    background-color: transparent;
+    font-size: 1vw;
+}

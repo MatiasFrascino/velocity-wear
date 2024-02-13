@@ -1,0 +1,52 @@
+/* Details */
+.details__box{
+    display: flex;
+    margin-top: 15px;
+}
+.details__box__img{
+    width: 35%;
+}
+.details__box__aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 30px;
+}
+.details__box__title{
+    font-size: 1.4vw;
+    margin-bottom: 1vw;
+    width: auto;
+}
+.details__box__size{
+    height: 2vw;
+    color: white;
+    background: transparent;
+    border-radius: 40px;
+    width: 2vw;
+    border-style: 1px solid black;
+    font-size: 1vw;
+    margin-right: 10px;
+    margin-bottom: 1.7vw;
+}
+.details__box__size:disabled{
+    display: none;
+}
+.details__box__paragraph{
+    width: 60%;
+    margin-bottom: 2vw;
+}
+.cartSummaryButton{
+    background-color: #FF3131;
+    height: 2vw;
+    width: 9vw;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: none;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 1vw;
+}

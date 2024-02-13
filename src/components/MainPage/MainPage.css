@@ -1,0 +1,39 @@
+/* Main Section Styles */
+.main__section{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    width: 96vw;
+}
+.main__section__img{
+    height: 30vw;
+}
+.main__section__box{
+    width: 60%;
+}
+.main__section__price{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+}
+.starImg{
+    height: 1vw;
+    width: 1vw;
+}
+.purchaseButtonMain{
+    background-color: #FF3131;
+    height: 2vw;
+    width: 9vw;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: none;
+    font-size: 1.2vw;
+    box-sizing: border-box;
+    margin-top: 1vw;
+    padding: 0.8vw;
+    text-decoration: none;
+}
+.mainParagraph{
+    margin-bottom: 2vw;
+}

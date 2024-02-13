@@ -1,0 +1,83 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+}
+nav img{
+    height: 10vw;
+    width: 10vw;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    list-style: none;
+    
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5.7vw;
+    text-decoration: none;
+    gap: 10px;
+    background-color: rgb(28, 28, 28);
+    width: auto;
+    box-sizing: border-box;
+    padding: 1vw;
+}
+.dropdown__list{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 1vw;
+    padding: 0;
+    color: white;
+}
+.link{
+    color: white;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 1vw;
+    padding: 0;
+    text-decoration: none;
+}
+.link__dropdown{
+    color: white;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 1vw;
+    padding: 0;
+    text-decoration: none;
+}
+.icon{
+    height: 3vw;
+    width: 3vw;
+    margin-right: 1vw;
+}
+.buttonDropdown{
+    background: transparent;
+    border: none;
+}
+button img{
+    width: 0.8vw;
+    height: 0.8vw;
+}
+.cart__widget__box{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}

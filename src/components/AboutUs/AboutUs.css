@@ -1,0 +1,23 @@
+/* About us Section */
+.about__us__img{
+    width: 50vw;
+}
+.about__us__box{
+    margin-right: 3vw;
+}
+.about__us__paragraph{
+    width: 90%;
+    font-size: 1.3vw;
+    margin-top: 2vw;
+    margin-bottom: 6vw;
+}
+.about__us__button{
+    width: 5vw;
+}
+.about__us__button__box{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    color: white;
+    text-decoration: none;
+}

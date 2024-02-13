@@ -1,0 +1,46 @@
+.main__section__shop{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 96vw;
+}
+.shop__card__box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 10vw;
+    margin-bottom: 5vw;
+}
+.shop__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.shop__card__img{
+    width: 25vw;
+    height: auto;
+}
+.shop__card__paragraph{
+    font-size: 1.5vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.shop__card__details__button{
+    background-color: #FF3131;
+    height: 2vw;
+    width: 9vw;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: none;
+    font-size: 1.1vw;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}

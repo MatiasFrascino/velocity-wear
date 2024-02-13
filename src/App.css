@@ -1,0 +1,44 @@
+/* General Styles */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+h1{
+  font-family: 'Josefin Slab';
+  text-transform: uppercase;
+  font-size: 5vw;
+  width: 30vw;
+}
+h2{
+  font-family: 'Josefin Slab';
+  text-transform: uppercase;
+  font-size: 4.5vw;
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5vw;
+  width: 40%;
+  
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1vw;
+  font-weight: 400;
+  margin-top: 0.3vw;
+  margin-bottom: 1vw;
+}
+.purchaseButton{
+  background-color: #FF3131;
+  height: 2vw;
+  width: 9vw;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border: none;
+  font-size: 1vw;
+}
