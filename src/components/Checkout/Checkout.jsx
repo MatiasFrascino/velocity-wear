@@ -2,14 +2,17 @@ import React, { useState } from 'react'
 import FormCheckout from './FormCheckout'
 import { CartContext } from '../../context/CartContext'
 import { useContext } from 'react'
+import { toast } from 'react-toastify';
 import { collection, addDoc, updateDoc, doc, getDocs } from 'firebase/firestore'
 import db from '../../db/db'
 import "./checkout.css"
+import 'react-toastify/dist/ReactToastify.css';
 
 const Checkout = () => {
     const [datosForm, setDatosForm] = useState({
         name : "",
         email : "",
+        repetir_email : "",
         phone : "",
     })
     const [idOrder, setIdOrder] = useState(null)
@@ -20,14 +23,37 @@ const Checkout = () => {
         setDatosForm( { ...datosForm, [event.target.name] : event.target.value } )
     }
 
+
     const sendOrder = (event) =>{
         event.preventDefault()
+        const fecha = new Date()
+        fecha.toLocaleDateString()
         //Formato de la orden
         const order = {
             comprador : { ...datosForm },
             productos : [...carrito],
-            total : totalPrice()
+            fecha : fecha,
+            total : totalPrice(),
         }
+        //Comparacion de emails para que sean iguales
+        if(datosForm.email != datosForm.repetir_email){
+            const notify = () => {
+                toast.error("The email fields do not match", {
+                    position: "bottom-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                })
+            };
+            notify()
+            return
+        }
+
+
         //Subir la orden a firebase
         const ordersRef = collection(db, "ordenes")
         addDoc(ordersRef, order)
@@ -66,7 +92,7 @@ const Checkout = () => {
     }
 
   return (
-    <div className='main__section'>
+    <div className='main__section__checkout'>
         {idOrder ? <div>
             <h2>Thanks for buying with us</h2>
             <p>Order ID : {idOrder}</p>

@@ -16,6 +16,12 @@ Velocity Wear E-Commerce is a project developed as the final assignment for the 
 - HTML5 & CSS3: Markup and styling languages for structuring and designing the application.
 - Firebase: A platform for building web and mobile applications, used for hosting and backend services (e.g., authentication, database).
 
+## Dependencies
+- `firebase`
+- `react-router-dom`
+- `react-toastify`
+- `sweetalert2`
+
 ## Setup Instructions
 1. Clone the repository: `git clone <repository-url>`
 2. Navigate to the project directory: `cd velocity-wear`
@@ -26,7 +32,7 @@ Velocity Wear E-Commerce is a project developed as the final assignment for the 
 ## Author
 
 - GitHub - [Matias Frascino](https://github.com/MatiasFrascino)
-- Linkedin - [Matias Frascino](https://www.linkedin.com/in/matias-sebastian-frascino-60332316b/)
+- Linkedin - [Matias Frascino](www.linkedin.com/in/matias-sebastian-frascino)
 
 
 ---

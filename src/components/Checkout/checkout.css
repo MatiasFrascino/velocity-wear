@@ -2,8 +2,9 @@ form{
     display: flex;
     flex-direction: column;
     height: auto;
+    width: auto;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 label{
     color: white;
@@ -34,4 +35,15 @@ form input{
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 3px;
     font-weight: 400;
+}
+.main__section__checkout{
+    height: auto;
+    display: flex;
+    justify-content: start;
+    width: 96vw;
+}
+.checkout__form__title{
+    width: auto;
+    font-size: 2vw;
+    margin-bottom: 1vw;
 }
